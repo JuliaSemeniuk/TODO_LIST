@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {},
+  "ignorePatterns": [
+    "CCS-3/*",
+    "CSS-1/*",
+    "CSS-2",
+    "CSS-4",
+    "HTML_HW_01",
+    "HTML_HW_02",
+    "JS_BASIC_HW_08",
+    "JS_BASIC_HW_09",
+    "JS_BASIC_HW_10",
+    "JS_PROJECT_12/todo/app/*.js",
+    "JS_PROJECT_12/todo/*.txt",
+    "*.config.js"
+  ]
+}
