@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./JS_PROJECT_12/todo/index.js",
+  entry: "./JS_DOM/todo_list/index.js",
   output: {
     path: path.resolve(__dirname, "app"),
     filename: "index.bundle.js",
