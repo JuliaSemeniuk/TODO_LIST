@@ -10,8 +10,8 @@
   "scripts": {
     "prepare": "husky install",
     "build": "npx webpack --config webpack.config.js",
-    "lint": "npx eslint -c .eslintrc.json JS_PROJECT_12/todo/*.js",
-    "prettier": "npx prettier --write --ignore-unknown JS_PROJECT_12/todo/*.js"
+    "lint": "npx eslint -c .eslintrc.json JS_DOM/todo_list/*.js",
+    "prettier": "npx prettier --write --ignore-unknown JS_DOM/todo_list/*.js"
   },
   "lint-staged": {
     "*.js": [

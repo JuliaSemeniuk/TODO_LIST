@@ -19,8 +19,8 @@
     "JS_BASIC_HW_08",
     "JS_BASIC_HW_09",
     "JS_BASIC_HW_10",
-    "JS_PROJECT_12/todo/app/*.js",
-    "JS_PROJECT_12/todo/*.txt",
+    "JS_DOM/todo_list/app/*.js",
+    "JS_DOM/todo_list/*.txt",
     "*.config.js"
   ]
 }
