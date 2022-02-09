@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./index.js"></script>
     <title>To Do List</title>
   </head>
   <body>
@@ -26,25 +34,31 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <div class="main__container container">
-        <div class="main__body body">
-          <h2 class="main__form-title">add task</h2>
-          <form class="main__form form">
-            <input type="text" class="main__form-input input" />
-            <button class="input__button">add</button>
+    <main class="tasks">
+      <div class="tasks__container container">
+        <div class="tasks__body body">
+          <h2 class="tasks__form-title">add task</h2>
+          <form class="tasks__form form">
+            <input type="text" class="tasks__form-input input" />
+            <button class="tasks__form-button">
+              <i class="fas fa-plus"></i>
+            </button>
           </form>
         </div>
-        <div class="main-content__body">
-          <h2 class="main-content__title">tasks</h2>
-          <ul class="main-content__list">
-            <li class="main-content__item">
-              item
+        <div class="tasks-content__body">
+          <h2 class="tasks-content__title">tasks:</h2>
+          <ul class="tasks-content__list">
+            <!-- <li class="tasks-list__item">
+              <p class="item__task">item</p>
               <div class="item__buttons">
-                <button class="item__button button__done">done</button>
-                <button class="item__button button__delete">delete</button>
+                <button class="item__button button__done">
+                  <i class="far fa-check-circle"></i>
+                </button>
+                <button class="item__button button__delete">
+                  <i class="fas fa-window-close"></i>
+                </button>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
