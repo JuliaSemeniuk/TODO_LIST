@@ -1,3 +1,6 @@
+import "./styles/index.css";
+import "../src/index.html";
+
 const tasksFormInput = document.querySelector(".tasks__form-input");
 const tasksFormButton = document.querySelector(".tasks__form-button");
 const tasksContentList = document.querySelector(".tasks-content__list");
@@ -17,7 +20,7 @@ function addTask(event) {
 
   const itemText = document.createElement("p");
   itemText.classList.add("item__text");
-  itemText.innerText = "innerText testing";
+  itemText.innerText = tasksFormInput.value;
 
   tasksListItem.appendChild(itemText);
 
