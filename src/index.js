@@ -1,5 +1,5 @@
-import "./styles/index.css";
-import "../src/index.html";
+import css from "./styles/index.css";
+// import "../src/index.html";
 
 const tasksFormInput = document.querySelector(".tasks__form-input");
 const tasksFormButton = document.querySelector(".tasks__form-button");

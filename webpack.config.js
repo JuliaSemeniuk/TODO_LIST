@@ -2,7 +2,7 @@ const path = require("path");
 
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+//const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
 const isProd = !isDev;
@@ -30,7 +30,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `./${getFilename("css")}`,
     }),
-    new CleanWebpackPlugin(),
+    //new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
@@ -40,7 +40,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.m?js$/,
