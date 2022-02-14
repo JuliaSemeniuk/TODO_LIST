@@ -1,10 +1,11 @@
 import "./styles/index.css";
 import "../src/index.html";
-// import { getImportStyleDomAPICode } from "style-loader/dist/utils";
 
 const tasksFormInput = document.querySelector(".tasks__form-input");
 const tasksFormButton = document.querySelector(".tasks__form-button");
 const tasksContentList = document.querySelector(".tasks-content__list");
+//search
+const searchInput = document.querySelector(".header__form-input");
 
 tasksFormButton.addEventListener("click", addTask);
 
@@ -68,4 +69,17 @@ function deleteTasksListItem(task) {
       render(tasks);
     }
   };
+}
+
+// search
+searchInput.addEventListener("keyup", applySearch);
+
+function applySearch(event) {
+  event.preventDefault();
+  console.log("event: ", event.target.value);
+  const value = event.target.value;
+  const filteredTasks = tasks.filter((task) => {
+    return task.value.includes(value);
+  });
+  render(filteredTasks);
 }
