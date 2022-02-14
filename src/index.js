@@ -8,6 +8,8 @@ const tasksContentList = document.querySelector(".tasks-content__list");
 const searchInput = document.querySelector(".header__form-input");
 
 tasksFormButton.addEventListener("click", addTask);
+// search
+searchInput.addEventListener("keyup", applySearch);
 
 let tasks = [];
 window.tasks = tasks;
@@ -70,9 +72,6 @@ function deleteTasksListItem(task) {
     }
   };
 }
-
-// search
-searchInput.addEventListener("keyup", applySearch);
 
 function applySearch(event) {
   event.preventDefault();
