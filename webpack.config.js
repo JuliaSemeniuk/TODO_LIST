@@ -12,7 +12,9 @@ const getFilename = (ext) =>
 
 module.exports = {
   entry: "./src/index.js",
-
+  resolve: {
+    fallback: { path: require.resolve("path-browserify") },
+  },
   mode: "development",
   output: {
     filename: `${getFilename("js")}`,
