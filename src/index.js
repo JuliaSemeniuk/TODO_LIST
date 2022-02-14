@@ -1,6 +1,6 @@
 import "./styles/index.css";
 import "../src/index.html";
-import { getImportStyleDomAPICode } from "style-loader/dist/utils";
+// import { getImportStyleDomAPICode } from "style-loader/dist/utils";
 
 const tasksFormInput = document.querySelector(".tasks__form-input");
 const tasksFormButton = document.querySelector(".tasks__form-button");
@@ -36,11 +36,11 @@ function addTask(event) {
 
   tasksListItem.appendChild(itemButtons);
 
-  const buttonDone = document.createElement("button");
-  buttonDone.classList.add("item__button", "button__done");
-  buttonDone.innerHTML = '<i class="far fa-check-circle"></i>';
+  // const buttonDone = document.createElement("button");
+  // buttonDone.classList.add("item__button", "button__done");
+  // buttonDone.innerHTML = '<i class="far fa-check-circle"></i>';
 
-  itemButtons.appendChild(buttonDone);
+  // itemButtons.appendChild(buttonDone);
 
   const buttonDelete = document.createElement("button");
   buttonDelete.classList.add("item__button", "button__delete");

@@ -9,5 +9,5 @@
     "sourceType": "module"
   },
   "rules": {},
-  "ignorePatterns": ["*.config.js", "./app/*js"]
+  "ignorePatterns": ["*.config.js", "/app/*.js"]
 }
